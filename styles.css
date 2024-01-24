@@ -1,0 +1,158 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden; /* Hide overflow to prevent scrollbars due to the floating bubbles */
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative; /* Add relative positioning to contain absolute-positioned bubbles */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Add styles for bubbles */
+.bubble {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50%;
+    position: absolute;
+    animation: floatBubble 5s ease-out infinite; /* Bubble floating animation */
+}
+
+/* Define the floating animation */
+@keyframes floatBubble {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+}
+
+/* Additional bubble styles with unique positions */
+.bubble:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    left: 50px;
+    animation-delay: 1s; /* Delay the start of the animation for the second bubble */
+}
+
+.bubble:nth-child(3) {
+    width: 25px;
+    height: 25px;
+    left: 100px;
+    animation-delay: 2s; /* Delay the start of the animation for the third bubble */
+}
+
+.bubble:nth-child(4) {
+    width: 30px;
+    height: 30px;
+    left: 150px;
+    animation-delay: 5s; /* Delay the start of the animation for the fourth bubble */
+}
+.bubble:nth-child(5) {
+    width: 45px;
+    height: 45px;
+    left: 200px;
+    animation-delay: 4s; /* Delay the start of the animation for the fourth bubble */
+}
+.bubble:nth-child(6) {
+    width: 25px;
+    height: 25px;
+    left: 250px;
+    animation-delay: 3s; /* Delay the start of the animation for the fourth bubble */
+}
+.bubble:nth-child(7) {
+    width: 35px;
+    height: 35px;
+    left: 300px;
+    animation-delay: 6s; /* Delay the start of the animation for the fourth bubble */
+}
+.bubble:nth-child(8) {
+    width: 25px;
+    height: 25px;
+    left: 350px;
+    animation-delay: 3s; /* Delay the start of the animation for the fourth bubble */
+}
+.bubble:nth-child(9) {
+    width: 35px;
+    height: 35px;
+    left: 850px;
+    animation-delay: 5s; /* Delay the start of the animation for the fourth bubble */
+}
+.bubble:nth-child(10) {
+    width: 15px;
+    height: 15px;
+    left: 900px;
+    animation-delay: 2s; /* Delay the start of the animation for the fourth bubble */
+}.bubble:nth-child(11) {
+    width: 25px;
+    height: 25px;
+    left: 950px;
+    animation-delay: 4s; /* Delay the start of the animation for the fourth bubble */
+}.bubble:nth-child(12) {
+    width: 40px;
+    height: 40px;
+    left: 1000px;
+    animation-delay: 3s; /* Delay the start of the animation for the fourth bubble */
+}.bubble:nth-child(13) {
+    width: 20px;
+    height: 20px;
+    left: 1050px;
+    animation-delay: 1s; /* Delay the start of the animation for the fourth bubble */
+}.bubble:nth-child(14) {
+    width: 30px;
+    height: 30px;
+    left: 1100px;
+    animation-delay: 6s; /* Delay the start of the animation for the fourth bubble */
+}.bubble:nth-child(15) {
+    width: 25px;
+    height: 25px;
+    left: 1150px;
+    animation-delay: 2s; /* Delay the start of the animation for the fourth bubble */
+}.bubble:nth-child(16) {
+    width: 15px;
+    height: 15px;
+    left: 1200px;
+    animation-delay: 4s; /* Delay the start of the animation for the fourth bubble */
+}

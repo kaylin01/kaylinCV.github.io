@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+}
+
+.background-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place the shapes behind the content */
+    animation: rotateShapes 10s linear infinite; /* Rotate the shapes */
+}
+
+/* Animation for rotating shapes */
+@keyframes rotateShapes {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Generate random shapes using pseudo-elements */
+.background-shapes::before,
+.background-shapes::before,
+.background-shapes::before,
+.background-shapes::before,
+.background-shapes::before,
+.background-shapes::before,
+.background-shapes::before,
+.background-shapes::before,
+.background-shapes::before,
+.background-shapes::before {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background-color: #3498db;
+}
+
+/* Adjust the size and colors of the shapes as needed */
+.background-shapes::before:nth-child(2) {
+    width: 70px;
+    height: 70px;
+}
+
+.background-shapes::before:nth-child(3) {
+    width: 90px;
+    height: 90px;
+}
+
+.background-shapes::before:nth-child(4) {
+    width: 110px;
+    height: 110px;
+}
+
+.background-shapes::before:nth-child(5) {
+    width: 130px;
+    height: 130px;
+}
+
+.background-shapes::before:nth-child(6) {
+    width: 150px;
+    height: 150px;
+}
+
+.background-shapes::before:nth-child(7) {
+    width: 170px;
+    height: 170px;
+}
+
+.background-shapes::before:nth-child(8) {
+    width: 190px;
+    height: 190px;
+}
+
+.background-shapes::before:nth-child(9) {
+    width: 210px;
+    height: 210px;
+}
+
+.background-shapes::before:nth-child(10) {
+    width: 230px;
+    height: 230px;
+}
+
+.main-shape {
+    width: 150px;
+    height: 150px;
+    background-color: #9b59b6;
+    top: 60%;
+    left: 80%;
+    transform: rotate(-45deg);
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Bubbles styles remain the same as in styles.css */
+.bubble {
+    /* ... */
+}
+
+.bubble-right {
+    /* ... */
+}
